@@ -1,0 +1,245 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 5px; /* Adjust the width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the scrollbar track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #e2eeeb79; /* Set the color of the scrollbar handle */
+    border-radius: 5px; /* Round the corners of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #46c6ea; /* Set the color of the scrollbar handle on hover */
+  }
+  
+  /* Handle when dragging */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #27d6e6; /* Set the color of the scrollbar handle when dragging */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    height: 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .hero {
+    background-image: url('images/sunset.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .featured-artworks-inner {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .artwork-card {
+
+    flex: 0 0 300px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px
+  }
+  
+  .artwork-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .artwork-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .artwork-card p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .artwork-card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* exhibition */
+ .exhi-title{
+  padding:20px
+
+ }
+  .exhi-section{
+    background-color:#333 ;
+  }
+  .exhibition{
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    text-align:center
+  }
+  .ex-single img{
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px 5px #222;
+  }
+
+  .ex-single p{
+    color:#ccc
+  }
+  .ex-single:hover{
+    transform: scale(1.05);
+  }
+
+
+/* artists*/
+
+.artist{
+  display:flex;
+  justify-content: center;
+  gap:25px;
+  text-align:center;
+}
+.artist-single img{
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 100px;
+    
+}
+
+.artist-single p{
+  color:#ccc;
+}
+
+/*details*/
+
+h2{
+  text-align: center;
+  padding:80px 0px 0px 0px;
+}
+.pic{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  padding:50px;
+}
+.pic img{
+  height:500px;
+  width:600px;
+}
+.details{
+  text-align: center;
+  padding:10px 10%;
+}
+hr{
+  border-style: dotted none none none;
+  border-width:thick;
+  width:90%;
+}
